@@ -1,11 +1,21 @@
 ##Snort-InterfaceDS#
 
-• Check activity performed with Snort IDS in real time: start the Snort program independently of the process that captures data in the background, it is useful when you want to visualize the traffic that Snort is detecting on the network.
-• Update Snort IDS Signatures: The PulledPork Script is executed to update alert signatures for Snort. It is important to stop the Snort IDS and Barnyard2 service before executing this command.
-• Stop Snort IDS service: Stops the background process that allows you to detect alerts on the network.
-• Stop barnyard2 service: Stops alert logging in the database, note that if the Snort IDS service is stopped Barnyard2 will not write any alerts
-• Restart web server: Restart the Apache2 web server.
-• Start SNORT IDS service: Initialize the process in the background for Snort (at the start of the system the process runs automatically).
-• Start Barnyard2 service: Initialize the process in the background for Barnyard2 (when starting the system the process runs automatically).
-• Check Active Services: check the services Snort needs to function properly in the system (Snort IDS process, barnyard2 process and apache web server)
-• Execute BASE (web interface for Snort): automatically executes the BASE web interface in the browser
+•	Comprobar actividad realizada con Snort IDS en tiempo real: inicia el programa de Snort de manera independiente al proceso que captura datos en segundo plano, es útil cuando se quiere visualizar el tráfico que está detectando Snort en la red.
+
+•	Actualizar firmas de Snort IDS: Es ejecutado el Script PulledPork para actualizar las firmas de alertas para Snort. Es importante detener el servicio de Snort IDS y Barnyard2 antes de ejecutar este comando.
+
+•	Detener servicio de Snort IDS: Detiene el proceso en segundo plano que permite detectar alertas en la red.
+
+•	Detener servicio de barnyard2: Detiene el registro de alertas en la base de datos, cabe destacar que si el servicio de Snort IDS está detenido Barnyard2 no escribirá ninguna alerta.
+
+•	Reiniciar servidor Web: Reinicia el servidor web Apache2.
+
+•	Iniciar servicio de SNORT IDS: Inicializa el proceso en segundo plano para Snort(al iniciar el sistema el proceso se ejecuta automáticamente).
+
+•	Iniciar servicio de Barnyard2: Inicializa el proceso en segundo plano para Barnyard2(al iniciar el sistema el proceso se ejecuta automáticamente).
+
+•	Comprobar Servicios Activos: comprueba los servicios que necesita Snort para funcionar adecuadamente en el sistema(proceso de Snort IDS, proceso de barnyard2 y servidor web apache).
+
+•	Ejecutar BASE (interface web para Snort): ejecuta automáticamente en el navegador la interface web BASE.
+
+•	Cambiar dirección IP escucha de Snort IDS: Permite ejecutar un editor de texto ya sea Pico o Notepad con la ruta del archivo snort.conf para cambiar la  IP en la que Snort registra alertas en la red, además contiene un breve manual para configurarlo correctamente. 
