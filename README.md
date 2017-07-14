@@ -1,5 +1,15 @@
-##Snort-InterfaceDS#
+##Snort-Panel-CIDETI##
 
+Descripción: Esta Aplicación fue escrita en lenguaje C con el objetivo de administrar de manera eficiente todos los proceso que frecuentemente requiere ejecutar Snort IDS, por medio de la terminal de Unix es posible operar dicho programa. Se decidio implementar dicho programa en terminal debido a que muchas veces el administrador del servidor requiere conectarse remotamente.
+
+Pasos para ejecutar el programa: 
+
+1.- Compilar el programa: Dentro de la terminal, en la ruta donde haya sido descargado el archivo utilizar el comando (sin comillas):
+        "gcc interface_ids.c -o Snort-Panel-CIDETI ".
+2.- Ejecutar el programa: Dentro de la terminal ejecutar el siguiente comando:
+        ./Snort-Panel-CIDETI
+        
+Caracteristicas de la aplicación:
 •	Comprobar actividad realizada con Snort IDS en tiempo real: inicia el programa de Snort de manera independiente al proceso que captura datos en segundo plano, es útil cuando se quiere visualizar el tráfico que está detectando Snort en la red.
 
 •	Actualizar firmas de Snort IDS: Es ejecutado el Script PulledPork para actualizar las firmas de alertas para Snort. Es importante detener el servicio de Snort IDS y Barnyard2 antes de ejecutar este comando.
