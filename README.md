@@ -6,6 +6,8 @@ Pasos para ejecutar el programa:
 
 1.- Compilar el programa: Dentro de la terminal, en la ruta donde haya sido descargado el archivo utilizar el comando (sin comillas):
         "gcc interface_ids.c -o Snort-Panel-CIDETI ".
+        
+        
 2.- Ejecutar el programa: Dentro de la terminal ejecutar el siguiente comando:
         ./Snort-Panel-CIDETI
         
