@@ -12,6 +12,7 @@ Pasos para ejecutar el programa:
         ./Snort-Panel-CIDETI
         
 Caracteristicas de la aplicación:
+
 •	Comprobar actividad realizada con Snort IDS en tiempo real: inicia el programa de Snort de manera independiente al proceso que captura datos en segundo plano, es útil cuando se quiere visualizar el tráfico que está detectando Snort en la red.
 
 •	Actualizar firmas de Snort IDS: Es ejecutado el Script PulledPork para actualizar las firmas de alertas para Snort. Es importante detener el servicio de Snort IDS y Barnyard2 antes de ejecutar este comando.
