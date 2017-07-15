@@ -7,7 +7,7 @@ int b;
         printf("******************************************************************************************\n");
         printf("PANEL DE ADMINISTRACION PARA SNORT IDS-CIDETI\n");
         printf("Seleccione una de las opciones, para hacerlo escriba el numero de la opción deseada.\n");
-        printf("\n1.-Escaneo Rapido con Snort\n 2.-Actualizar Firmas de Snort\n 3.-Detener Servicio de Snort IDS\n 4.-Detener Servicio Barnyard2\n 5.-Reiniciar servido$
+        printf("\n1.-Escaneo Rapido con Snort\n 2.-Actualizar Firmas de Snort\n 3.-Detener Servicio de Snort IDS\n 4.-Detener Servicio Barnyard2\n 5.-Reiniciar servidor web\n 6.-Iniciar Servicio Snort IDS(Por defecto iniciado)\n 7.-\Iniciar Servicio Barnyard2(Por defecto iniciado)\n 8.-Estado de Servicios de Snort IDS\n 9.-Abrir GUI-WEB BASE en el navegador\n 10.-Cambiar Dirección IP escucha de Snort\n");
         printf("Ingrese un numero:\n");
         scanf("%i",&a);
         printf("******************************************************************************************\n");
@@ -28,7 +28,7 @@ printf("Servicio Barnyard2 detenido, no se guardaran alertas en la BD hasta el r
 system("service barnyard2 stop");
 }
 if(a==5){
-printf("El servidor Web se ha detenido\n");
+printf("El servidor Web se ha reiniciado\n");
 system("service apache2 restart");
 }
 if(a==6){
