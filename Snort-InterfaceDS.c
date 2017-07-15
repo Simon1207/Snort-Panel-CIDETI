@@ -15,7 +15,7 @@ printf("5.-Reiniciar servidor web\n");
 printf("6.-Iniciar Servicio Snort IDS(Por defecto iniciado)\n");
 printf("7.-Iniciar Servicio Barnyard2(Por defecto iniciado)\n");
 printf("8.-Estado de Servicios de Snort IDS\n");
-printf("9.-Abrir GUI-WEB BASE en el navegado\n");
+printf("9.-Abrir GUI-WEB BASE en el navegador\n");
 printf("10.-Cambiar direccion IP escucha de Snort IDS(Red que monitorea Snort)\n"); 
 
       printf("Ingrese un numero:\n");
@@ -59,8 +59,8 @@ if(a==9){
 system("/usr/bin/firefox localhost/base/base_main.php");
 }
 if(a==10){
-printf("\nAl ser abierto el arhivo Snort.conf encuentre la linea 45.\n La linea indicada contiene la cadena de texto: ipvar HOME_NET direccionIP/subfijo\n Finalmente guardar cambios.");
-printf("Ejemplos de como podria quedar la linea despues de su modificacion: \n\n ipvar HOME_NET 177.242.7.0/22\n  ipvar HOME_NET 10.10.10.0/8\n  ipvar HOME_NET 192.168.70.0");
+printf("\nAl ser abierto el arhivo Snort.conf encuentre la linea 45.\n La linea indicada contiene la cadena de texto: ipvar HOME_NET direccionIP/subfijo\n Finalmente guardar cambios.\n");
+printf("Ejemplos de como podria quedar la linea despues de su modificacion: \n\n ipvar HOME_NET 177.242.7.0/22\n  ipvar HOME_NET 10.10.10.0/8\n  ipvar HOME_NET 192.168.70.0/24\n");
 printf("\nSeleccione un editor de Texto\n 1.-pico\n 2.-notepadqq(GUI)\n");
 printf("SELECCIONE EDITOR:");
 scanf("%i",&b);
