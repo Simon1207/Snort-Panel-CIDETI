@@ -14,7 +14,6 @@ int b;
 if(a==1){
 printf("Ejecutando Snort IDS\n");
 system("/usr/local/bin/snort -A console -q -u snort -g snort -c /etc/snort/snort.conf -i eth0");
-
 }
 if(a==2){
 printf("Actualizando Firmas para Snort IDS\n");
@@ -62,7 +61,5 @@ if(b==2){
 system("notepadqq /etc/snort/snort.conf");
 }
 }//if a
-
 return 0;
 }
-
