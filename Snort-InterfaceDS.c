@@ -7,8 +7,18 @@ int b;
         printf("******************************************************************************************\n");
         printf("PANEL DE ADMINISTRACION PARA SNORT IDS-CIDETI\n");
         printf("Seleccione una de las opciones, para hacerlo escriba el numero de la opción deseada.\n");
-        printf("\n1.-Escaneo Rapido con Snort\n 2.-Actualizar Firmas de Snort\n 3.-Detener Servicio de Snort IDS\n 4.-Detener Servicio Barnyard2\n 5.-Reiniciar servidor web\n 6.-Iniciar Servicio Snort IDS(Por defecto iniciado)\n 7.-\Iniciar Servicio Barnyard2(Por defecto iniciado)\n 8.-Estado de Servicios de Snort IDS\n 9.-Abrir GUI-WEB BASE en el navegador\n 10.-Cambiar Dirección IP escucha de Snort\n");
-        printf("Ingrese un numero:\n");
+printf("1.-Escaneo Rapido con Snort\n");
+printf("2.-Actualizar Firmas de Snort\n");
+printf("3.-Detener Servicio de Snort IDS\n");
+printf("4.-Detener Servicio Barnyard2\n");
+printf("5.-Reiniciar servidor web\n");
+printf("6.-Iniciar Servicio Snort IDS(Por defecto iniciado)\n");
+printf("7.-Iniciar Servicio Barnyard2(Por defecto iniciado)\n");
+printf("8.-Estado de Servicios de Snort IDS\n");
+printf("9.-Abrir GUI-WEB BASE en el navegado\n");
+printf("10.-Cambiar direccion IP escucha de Snort IDS(Red que monitorea Snort)\n"); 
+
+      printf("Ingrese un numero:\n");
         scanf("%i",&a);
         printf("******************************************************************************************\n");
 if(a==1){
@@ -49,8 +59,8 @@ if(a==9){
 system("/usr/bin/firefox localhost/base/base_main.php");
 }
 if(a==10){
-printf("\nAl ser abierto el arhivo Snort.conf encuentre la linea 45.\n La linea indicada contiene la cadena de texto: ipvar HOME_NET direccionIP/subfijo\n Finalmente g$
-printf("Ejemplos de como podria quedar la linea despues de su modificacion: \n\n ipvar HOME_NET 177.242.7.0/22\n  ipvar HOME_NET 10.10.10.0/8\n  ipvar HOME_NET 192.168$
+printf("\nAl ser abierto el arhivo Snort.conf encuentre la linea 45.\n La linea indicada contiene la cadena de texto: ipvar HOME_NET direccionIP/subfijo\n Finalmente guardar cambios.");
+printf("Ejemplos de como podria quedar la linea despues de su modificacion: \n\n ipvar HOME_NET 177.242.7.0/22\n  ipvar HOME_NET 10.10.10.0/8\n  ipvar HOME_NET 192.168.70.0");
 printf("\nSeleccione un editor de Texto\n 1.-pico\n 2.-notepadqq(GUI)\n");
 printf("SELECCIONE EDITOR:");
 scanf("%i",&b);
@@ -63,3 +73,4 @@ system("notepadqq /etc/snort/snort.conf");
 }//if a
 return 0;
 }
+
