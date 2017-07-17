@@ -73,4 +73,3 @@ system("notepadqq /etc/snort/snort.conf");
 }//if a
 return 0;
 }
-
