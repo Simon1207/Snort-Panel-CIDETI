@@ -59,7 +59,7 @@ if(a==9){
 system("/usr/bin/firefox localhost/base/base_main.php");
 }
 if(a==10){
-printf("\n Al ser abierto el arhivo Snort.conf encuentre la linea 45.\n La linea indicada contiene la cadena de texto: ipvar HOME_NET direccionIP/subfijo\n Finalmente guardar cambios.\n");
+printf("\n Al ser abierto el arhivo Snort.conf encuentre la linea 45.\n La linea indicada contiene la cadena de texto: ipvar HOME_NET direccionIP/prefijo\n Finalmente guardar cambios.\n");
 printf(" Ejemplos de como podria quedar la linea despues de su modificacion: \n\n  ipvar HOME_NET 177.242.7.0/22\n  ipvar HOME_NET 10.10.10.0/8\n  ipvar HOME_NET 192.168.70.0/24\n");
 printf("\nSeleccione un editor de Texto\n 1.-pico\n 2.-notepadqq(GUI)\n");
 printf("SELECCIONE EDITOR:");
